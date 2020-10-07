@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<style>
+			form{
+			align-self: center;
+			margin-top: 5%;
+			margin-left:25%;
+			}	
+			input[type=text], select {
+		 	width: 50%;
+		  	padding: 12px 20px;
+		 	margin: 8px 0;
+		  	border: 1px solid #ccc;
+		 	border-radius: 4px;
+		  	box-sizing: border-box;
+			}
+			input[type=number], select {
+		 	width: 50%;
+		  	padding: 12px 20px;
+		 	margin: 8px 0;
+		  	border: 1px solid #ccc;
+		 	border-radius: 4px;
+		  	box-sizing: border-box;
+			}
+		input[type=submit] {
+		  width: 40%;
+
+		  background-color: orange;
+		  color: white;
+		  padding: 14px 20px;
+		  margin-left:  10% ;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		input[type=radio] {
+		  width: 3%;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		input[type=checkbox] {
+		  width: 10%;
+		  margin-left: 0%;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		h2{
+		text-align: left;
+		padding-left: 15%; 		
+		}
+	</style>
+
+
+
+
+<head>
+	<title>Form Design</title>
+</head>
+	<body style="background-color:#f2f2f2;">
+		
+		<form>
+			<h2>Registration form</h2>
+			First name :-<input type="text" name="First">
+			<br><br>
+			Last name :-<input type="text" name="Last">
+			<br><br>
+			Roll No:-  &nbsp &nbsp <input type="number" name="pnr">
+			<br><br>
+			<input type="radio" name="gender" value="male"> Male
+			<input type="radio" name="gender" value="female"> Female<br><br>
+			<label for="country"> Country &nbsp &nbsp</label>
+			  <select id="country" name="country">
+			<option value="australia">India</option>
+	    	<option value="canada">Canada</option>
+	      	<option value="usa">USA</option>
+	  	  	</select>
+	  	  	<br><br>
+	  	  
+			<input type="submit" name="submit">
+			<br>
+			<!--<label for="Feedback">Feedback</label>
+			<br>
+    		<textarea id="subject"  style="height:50px ;width:60%"></textarea>
+			-->
+		</form>
+
+	</body>
+</html>
