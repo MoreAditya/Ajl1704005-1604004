@@ -7,13 +7,14 @@
 <script> 
 $(document).ready(function(){
   $("#flip").click(function(){
-    $("#panel").slideDown("slow");
+    $("#panel").slideToggle("slow");
   });
 });
 </script>
 <style> 
-#panel, #flip {
+#panel ,#flip{
   padding: 5px;
+ 
   text-align: center;
   background-color: #e5eecc;
   border: solid 1px #c3c3c3;
@@ -30,7 +31,7 @@ $(document).ready(function(){
 	<link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
-        <div id="flip"> slide down </div>
+        <div id="flip"> slide down or up </div>
         <div id="panel">welcome</div>
 	<div class="header">
         <h1>Rajarambapu institute of technology's Hostel</h1><br>
@@ -53,10 +54,17 @@ $(document).ready(function(){
 	
 	<div class="input-group">
 	<label>UserName</label>
-	<input type="text" name="username" value="">
+	<input type="text" id="fname" value="" onblur="myFunction()">
 	</div>
+        
+        
 
-	
+	<script>
+             function myFunction() {
+                 var x = document.getElementById("fname");
+                 x.value = x.value.toUpperCase();
+                  }
+        </script>
 					
 
 	<div class="input-group">
@@ -78,5 +86,26 @@ $(document).ready(function(){
 	 		  Back to Homepage <a href="hostel.html">Home</a>
 	 	</p>
 	 	</form>
+<head>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Hide</button>
+
+<p>HOSTEL IS CLOSED DUE TO CORONA </p>
+
+</body>
+
+
 	 </body>
 	 </html>
