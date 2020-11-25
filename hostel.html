@@ -4,9 +4,14 @@
 		
 	</style>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
 </script>
+
 
 	<title>Hostel</title>
   <meta charset="utf-8">
@@ -98,6 +103,8 @@
       <p class="bg-success text-black">Hostelers can meet the Visitors (Parents / Local Guardian) during the visiting hours (details attached separately) with the prior permission of Warden / Resident Warden. For girls no one other than Parent or Local guardian will be entertained. </p>
       <p class="bg-info text-black"> Visitors to the hostel inmates will be required to enter their names and address and the name of the student whom they want to see etc. in the register kept with the duty security guard at the Institute entrance. They will not be permitted to enter the Students rooms in the hostels.  </p>
     </div>
+
+
   <div class="col-md-5">
 <div class="container">
  
@@ -131,9 +138,9 @@
       
 
       </div>
-    
-     
-    </div>
+
+
+  </div>
   </div>
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -172,4 +179,150 @@
 </body>
 
 </body>
+<head>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#box").animate({height: "200px"});
+  });
+  $("#btn2").click(function(){
+    $("#box").animate({height: "100px"});
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+
+</body>
+
+
+<head>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(10000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<button id="stop">Stop sliding</button>
+
+<div id="flip">HOSTEL FACILITY</div>
+<div id="panel">students have access to TV room, aqua guard for hot, cold and normal drinking water ,sports activities .HOW TO IMPROVE YOUR HOSTEL REVIEWS
+Keep your hostel clean. You don't have to be able to see your reflection on the polished floor, but you have to keep it clean at all times. ...
+Facilities. Make sure that every information you put on your listing profile is exactly true. ...
+Maintenance. ...
+Safety and security. ...
+Staff and atmosphere.</div>
+
+</body>
+
+
+
+<head>
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">HOSTEL EVENTS !!</p>
+
+<button>Click</button>
+
+</body>
+
+
+<body>
+
+<p>Press a key on the keyboard in the input field to find out if the ALT key was pressed or not.</p>
+
+<input type="text" onkeydown="isKeyPressed(event)">
+
+<p id="demo"></p>
+
+<script>
+function isKeyPressed(event) {
+  var x = document.getElementById("demo");
+  if (event.altKey) {
+    x.innerHTML = "The ALT key was pressed!";
+  } else {
+    x.innerHTML = "The ALT key was NOT pressed!";
+  }
+}
+</script>
+
+</body>
+
+
+<body>
+
+<div onmousedown="WhichButton(event)">Click this text with one of your mouse buttons to return a number.
+  <p>
+  1 = The left mouse button<br>
+  2 = The right mouse button<br>
+ 
+  </p>
+</div>
+
+
+
+<h2>You pressed button: <span id="demo"></span></h2>
+
+<script>
+function WhichButton(event) {
+  var x = event.buttons;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+
+
+<body onafterprint="myFunction()">
+
+<h1>Try to print this document</h1>
+<p> The onafterprint event is not supported in Safari and Opera.</p>
+<p> In IE, the onafterprint event occurs before the print dialogue box, instead of after.</p>
+
+<script>
+function myFunction() {
+  alert("This document is now being printed");
+}
+</script>
+
+</body>
+
+
 </html>
