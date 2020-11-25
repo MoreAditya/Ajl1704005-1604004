@@ -4,6 +4,10 @@
 		
 	</style>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
+</script>
+
 	<title>Hostel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,6 +64,16 @@
           
         </ul>
       </li>
+	 <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hidequery
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+                  <button id="hide">Hide</button><button id="show">Show</button>
+         
+          
+        </ul>
+      </li>
+
       
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -138,6 +152,20 @@
   
     
 </nav>
+
+ <script>
+          $(document).ready(function(){
+                   $("#hide").click(function(){
+          $("p").hide();
+          });
+          $("#show").click(function(){
+          $("p").show();
+          });
+           });
+      </script>
+
+
+ 
 
 
 
